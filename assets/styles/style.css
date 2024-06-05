@@ -16,6 +16,10 @@
 .logo {
     color: white;
 }
+#logo {
+    height: 50px;
+    width: 250px;color: aliceblue;
+}
 .navbar {
     height: 50px;
     width: 100%;
