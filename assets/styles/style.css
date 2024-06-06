@@ -60,6 +60,15 @@
     justify-content: center;
     margin-top: 400px;
 }
+#sect2 {
+    margin-top: 0;
+}
+#sect3 {
+    margin-top: 0;
+}
+#sect4 {
+    margin-top: 0;
+}
 .sf {
     font-weight: bold;
     font-size: 2rem;
