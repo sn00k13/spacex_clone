@@ -6,8 +6,8 @@
 }
 .section1 {
     background-size: cover;
-    background-image: url('/assets/img/Flight_4_Website_Mobile_1_c11fc4201b.jpg');
-    height: auto;
+    background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/Flight_4_Website_Mobile_1_c11fc4201b.jpg');
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,6 +45,7 @@
 .navbar {
     height: 50px;
     width: 100%;
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,13 +53,12 @@
 .upcoming {
     height: 200px;
     width: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     color: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    margin-top: 400px;
 }
 #sect2 {
     margin-top: 0;
@@ -88,7 +88,7 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/assets/img/Star_8_5_060424_DSC_1646_desktop_8fa6aee304.jpg');
+    background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/Star_8_5_060424_DSC_1646_desktop_8fa6aee304.jpg');
     height: 600px;
     width: 100%;
 }
@@ -99,7 +99,7 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/assets/img/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
+    background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
     height: 600px;
     width: 100%;
 }
@@ -109,7 +109,7 @@ button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/assets/img/make_life_multiplanetary_desktop_3fa7cff73c.jpg');
+    background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/make_life_multiplanetary_desktop_3fa7cff73c.jpg');
     height: 600px;
     width: 100%;
     padding: 20px;
