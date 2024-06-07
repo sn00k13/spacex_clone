@@ -162,3 +162,16 @@ button {
     font-size: 40px;
     font-weight: 100;
 }
+#arrow {
+    position: relative;
+    top: 0;
+    animation-name: arrow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow {
+    0%       { opacity: 0; }
+      25%, 75% { top:15px; }
+      50%      { top:20px; }
+      100%     {top:0;}
+}
