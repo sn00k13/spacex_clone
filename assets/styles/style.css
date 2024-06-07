@@ -12,21 +12,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
 }
-#myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 50%;
-    min-height: 50%;
-  }
+.navbar {
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+}
 .logo {
     /* border: 1px solid black; */
     color: white;
     padding: 10px;
     font-weight: bold;
-    width: 85%;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -42,8 +45,16 @@
     height: 30px;
     /* border: 1px solid black; */
     display: flex;
-    justify-content: flex-end;
-    width: 15%;
+    gap: 10px;
+    width: auto;
+    align-items: center;
+}
+#hamburg {
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
 }
 .line {
     border: 3px solid white;
@@ -51,17 +62,19 @@
     height: 0.0625rem;
     margin: 3px;
 }
-.navbar {
-    /* border: 1px solid black; */
-    height: 50px;
-    width: 100%;
-    position: sticky;
+#navigation {
     display: flex;
-    /* gap: 10px; */
-    justify-content: center;
-    align-items: center;
-    /* justify-content: space-between; */
-    padding: 20px;
+    font-size: 12px;
+    list-style-type: none;
+    gap: 10px;
+}
+#nav{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navigation {
+    display: none;
 }
 .upcoming {
     height: auto;
@@ -101,23 +114,23 @@ button {
     display: flex;
     align-items: flex-end;
     gap: 10px;
-    padding: 20px;
+    padding: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/Star_8_5_060424_DSC_1646_desktop_8fa6aee304.jpg');
-    height: 600px;
+    height: 750px;
     width: 100%;
 }
 .section3 {
     display: flex;
     align-items: flex-end;
-    padding: 20px;
+    padding: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg');
-    height: 600px;
+    height: 750px;
     width: 100%;
 }
 .section4 {
@@ -127,9 +140,9 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/make_life_multiplanetary_desktop_3fa7cff73c.jpg');
-    height: 600px;
+    height: 750px;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .footer {
@@ -174,4 +187,16 @@ button {
       25%, 75% { top:15px; }
       50%      { top:20px; }
       100%     {top:0;}
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        display: inline-block;
+    }
+    #hamburg {
+        display: inline-block;
+    }
+    .section2, .section1, .section3, .section4 {
+        padd
+    }
 }
