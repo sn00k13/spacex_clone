@@ -184,6 +184,16 @@ button {
     color: white;
     font-weight: bold;
 }
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+button::after {
+    height: 0;
+  left: 0;
+  bottom: 0;
+}
 .section2 {
     display: flex;
     align-items: flex-end;
