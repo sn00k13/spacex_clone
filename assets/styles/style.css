@@ -4,30 +4,82 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+.container {
+    position: relative;
+}
+.menu-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: none;
+}
+.menu-side1 {
+    width: 80%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+.menu-side2 {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
+    gap: 10px;
+    font-size: 14px;
+}
+.menu-items {
+    border-top: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 45px;
+}
+#menu-itmes {
+    color: white;
+    text-decoration: none;
+}
+#hidden-items {
+    display: none;
+}
 .section1 {
     background-size: cover;
-    background-image: url('https://sn00k13.github.io/spacex_clone/assets/img/Flight_4_Website_Mobile_1_c11fc4201b.jpg');
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
+    z-index: 1;
 }
 #myVideo {
-    display: none;
-}
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    object-fit: contain;
+  }
 .navbar {
     /* border: 1px solid black; */
     height: 50px;
     width: 100%;
     display: flex;
-    /* gap: 10px; */
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
 }
 .logo {
+
     /* border: 1px solid black; */
     color: white;
     padding: 10px;
@@ -38,15 +90,23 @@
     justify-content: center;
     align-items: center;
 }
+
 #logo {
     height: 25px;
     width: 160px;
     padding-bottom: 5px;
 
 }
+
+.navigation {
+    /* border: 1px solid white; */
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
 .hamburger {
     height: 30px;
-    /* border: 1px solid black; */
     display: flex;
     gap: 10px;
     width: auto;
@@ -59,10 +119,24 @@
     font-size: 13px;
     font-weight: bold;
 }
+.shop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#shop {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+#shop:hover {
+    text-decoration: underline;
+}
 .line {
     border: 3px solid white;
     width: 2rem;
-    height: 0.0625rem;
+    height: 1px;
     margin: 3px;
 }
 #navigation {
@@ -75,9 +149,6 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-.navigation {
-    display: none;
 }
 .upcoming {
     height: auto;
@@ -192,27 +263,29 @@ button {
       100%     {top:0;}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 392px) {
     .navigation {
-        display: inline-block;
+        display: none;
     }
-    #hamburg {
-        display: inline-block;
+    #shop {
+        display: none;
     }
-    .section2, .section1, .section3, .section4 {
-        padding: 20px 150px;
+    .logo {
+        margin-left: 60px;
     }
     #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%; 
-        min-height: 100%;
-        z-index: -1;
-        object-fit: contain;
-      }
-      .section1 {
-        background-image: none;
-      }
-
+        transform: translateX(calc((100% - 100vw) / 2));
+    }
+    /* .section1 {
+        background-image: url('/assets/img/Flight_4_Website_Mobile_1_c11fc4201b.jpg');
+    } */
+    .menu-side1 {
+        width: 20%;
+    }
+    .menu-side2 {
+        width: 80%;
+    }
+    #hidden-items {
+        display: flex;
+    }
 }
